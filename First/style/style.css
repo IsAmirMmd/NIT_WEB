@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto&family=Vazirmatn&display=swap");
+* {
+  direction: rtl;
+  font-family: VazirMatn;
+
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f5f5f5;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+}
+header nav {
+  margin-left: auto;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: rgb(224, 206, 153);
+}
+header nav ul {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 a {
+  color: initial;
+}
+
+/* style for links */
+a {
+  display: block;
+  color: rgb(195, 148, 8);
+  text-decoration: none;
+  transition: transform 0.25s ease-in-out;
+  width: fit-content;
+}
+a:hover {
+  transform: scale(1.05);
+}
+div {
+  margin-top: 1rem;
+  direction: ltr;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  gap: 16px;
+  position: relative;
+}
+
+/* posts (main & section) */
+main {
+  display: grid;
+  grid-template-areas:
+    "article article article"
+    "table img video";
+  gap: 16px 24px;
+  padding-left: 16px;
+}
+main section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main section li {
+  flex: 1;
+}
+main section h2 {
+  margin-bottom: 8px;
+}
+.post-container {
+  grid-area: article;
+}
+.post-container--post {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.post-container--post p {
+  margin-right: 1rem;
+  line-height: 2rem;
+}
+
+.table {
+  grid-area: table;
+}
+
+.image-container {
+  grid-area: img;
+}
+.image-container img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.video-container {
+  grid-area: video;
+}
+.video-container video {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+/* table */
+table {
+  background: rgb(224, 206, 153);
+  border: 1px solid rgb(195, 148, 8);
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+}
+table thead tr :nth-child(n),
+table tbody tr :nth-child(n) {
+  height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+/* aside */
+aside {
+  padding-right: 8px;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px 0 0 8px;
+  flex-direction: column;
+  background-color: rgb(224, 206, 153);
+}
+aside ul {
+  padding: 0 24px;
+}
+
+/* button */
+button {
+  position: absolute;
+  background-color: rgb(195, 148, 8);
+  color: rgb(224, 206, 153);
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  top: 0;
+  left: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(224, 206, 153);
+  color: rgb(195, 148, 8);
+}
+/* footer */
+footer {
+  margin-top: 1rem;
+  text-align: center;
+  color: rgb(29, 28, 24);
+  padding: 10px;
+}
