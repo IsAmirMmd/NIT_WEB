@@ -40,4 +40,9 @@ If you'd like to contribute to this repository by suggesting improvements, repor
 - Push your changes to your fork: git push origin feature/new-feature.
 - Create a pull request detailing your changes.
 
+## Website Links
+
+- [First project - simple blog](https://nit-web.netlify.app/first/home)
+- ...
+
 [LinkedIn](https://www.linkedin.com/in/IsAmirMmd)
