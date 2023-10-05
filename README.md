@@ -8,7 +8,7 @@ Welcome to my university homework repository! This repository is where I store a
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
-- [License](#license)
+- [Links](#website-links)
 
 ## About
 
