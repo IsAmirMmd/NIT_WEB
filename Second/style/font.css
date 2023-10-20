@@ -1,0 +1,22 @@
+@font-face {
+  font-family: wotfard;
+  font-weight: 400;
+  src: url(../assets/fonts/wotfard-regular-webfont.woff2);
+}
+
+@font-face {
+  font-family: wotfard;
+  font-weight: 500;
+  src: url(../assets/fonts/wotfard-medium-webfont.woff2);
+}
+
+@font-face {
+  font-family: wotfard;
+  font-weight: 600;
+  src: url(../assets/fonts/wotfard-semibold-webfont.woff2);
+}
+
+* {
+  font-family: wotfard;
+  color: var(--text-color);
+}
