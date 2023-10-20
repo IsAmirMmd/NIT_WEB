@@ -8,7 +8,7 @@ Welcome to my university homework repository! This repository is where I store a
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
-- [License](#license)
+- [Links](#website-links)
 
 ## About
 
@@ -39,5 +39,10 @@ If you'd like to contribute to this repository by suggesting improvements, repor
 - Make your changes, add commits, and ensure your code is well-documented.
 - Push your changes to your fork: git push origin feature/new-feature.
 - Create a pull request detailing your changes.
+
+## Website Links
+
+- [First project - simple blog](https://nit-web.netlify.app/first/home)
+- ...
 
 [LinkedIn](https://www.linkedin.com/in/IsAmirMmd)
