@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 :root {
@@ -18,16 +19,28 @@
   --white-color: #ffffff;
   --homepage-light: #bfdef2;
   --homepage-dark: #d3eaf8;
+  --background-gradiant: linear-gradient(#bfdef2 0%, #d3eaf8 100%);
+}
+
+body {
+  background: var(--background-gradiant);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  font-size: inherit !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .header {
-  padding: 48px 32px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding: 32px;
   width: 100%;
-  z-index: 5;
+  position: sticky;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +58,7 @@
 .navbar .nav--brand a {
   color: var(--text-color);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 22px !important;
 }
 .header .navbar .nav--link {
   display: flex;
@@ -58,18 +71,178 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
 }
+
+.header .nav--link li a:hover {
+  color: var(--primary-color);
+}
+
 .header .navbar .nav--theme {
   display: block;
   margin-left: auto;
+  cursor: pointer;
 }
 .wave-block {
-  background: linear-gradient(#bfdef2 0%, #d3eaf8 100%);
   display: flex;
   flex-direction: column;
-  min-height: 250px;
+  position: relative;
+  min-height: 300px;
 }
 .wave-block svg {
   margin-top: auto;
   width: 100%;
+}
+
+.wave-block h1 {
+  position: absolute;
+  bottom: 125px;
+  left: 10%;
+}
+
+/* ---- container ---- */
+.container {
+  max-width: var(--desktop-width);
+  position: relative;
+  /* full width background  */
+  box-shadow: 0 0 0 100vmax var(--white-color);
+  clip-path: inset(0 -100vmax);
+  margin: 0 auto;
+  display: grid;
+  background: var(--white-color);
+  grid-template-columns: 6fr 4fr;
+  gap: 32px;
+  padding: 56px 0;
+}
+.container h4 {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 56px;
+}
+
+.popular-content {
+  max-width: 380px;
+  margin-left: auto;
+  position: sticky;
+  height: fit-content;
+  top: 100px;
+}
+
+.content--list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popular--list__item {
+  display: flex;
+  font-size: 19px;
+  font-weight: 500;
+  align-items: center;
+  cursor: pointer;
+}
+
+.popular--list__item .list--item__icon {
+  display: block;
+  margin-right: 20px;
+  transition: all 0.3s ease-in;
+  position: absolute;
+  left: -24px;
+}
+.popular--list__item .list--item__icon img {
+  width: 11px;
+  height: 9px;
+}
+
+.recent-post h5 {
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.container__post {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.recent-post .post--box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recent-post .post--box > a {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recent-post .post--box .post--box__text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container__post .read-more {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* hover effect in popular content */
+
+.popular--list__item:hover > .list--item__icon {
+  transform: translate(8px);
+}
+
+.recent-post .container__post .post--box:hover > a > h5 {
+  color: var(--secondary-color);
+}
+
+/* footer */
+.footer {
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  display: flex;
+  padding: 32px 0;
+  justify-content: space-between;
+}
+
+.footer--text__thanks h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer .footer--text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer--text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--text .footer--text__copyright {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+.footer .footer--link h4 {
+  font-size: 14px;
+  color: var(--gray-color);
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.footer .footer--link .footer--link__list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  font-size: 14px;
+  font-weight: 400;
 }
