@@ -43,6 +43,7 @@ If you'd like to contribute to this repository by suggesting improvements, repor
 ## Website Links
 
 - [First project - simple blog](https://nit-web.netlify.app/first/home)
+- [Second project - Advanced blog](https://nit-web.netlify.app/second)
 - ...
 
 [LinkedIn](https://www.linkedin.com/in/IsAmirMmd)
