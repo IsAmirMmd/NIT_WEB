@@ -22,6 +22,7 @@ To access and use the contents of this repository, follow these steps:
 
    ```bash
    git clone https://github.com/IsAmirMmd/NIT_WEB.git
+   ```
 
 ## Folder Structure
 
@@ -32,6 +33,7 @@ The repository is organized as follows:
 3. <strong>LICENSE:</strong> This repository is licensed under the <a href="#License">MIT License</a>.
 
 ## Contributing
+
 If you'd like to contribute to this repository by suggesting improvements, reporting issues, or submitting your own coursework, please follow these guidelines:
 
 - Fork the repository.
@@ -44,6 +46,7 @@ If you'd like to contribute to this repository by suggesting improvements, repor
 
 - [First project - simple blog](https://nit-web.netlify.app/first/home)
 - [Second project - Advanced blog](https://nit-web.netlify.app/second)
+- [Third Project - Crypto Blog](https://nit-web.netlify.app/crypto-bootstrap)
 - ...
 
 [LinkedIn](https://www.linkedin.com/in/IsAmirMmd)
