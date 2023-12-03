@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Blog Website" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bootstrap.css" />
+    <link rel="stylesheet" href="style/font.css" />
+    <title>My Blog - Home - v2</title>
+  </head>
+  <body>
+    <!-- header block -->
+    <header
+      class="header sticky-top d-flex justify-content-center align-items-center"
+    >
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <a class="p-0 navbar-brand" href="./index.html">IsAmirMmd</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/articles.html">articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/about.html">about</a>
+            </li>
+          </ul>
+          <span class="nav--theme">
+            <img
+              src="./assets/images/Sun.svg"
+              alt="theme changer"
+              width="32"
+              height="32"
+            />
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- box for wave background(hero section) -->
+    <div
+      class="wave-block d-flex flex-column position-relative align-items-center"
+    >
+      <div class="hero-title w-100 h-100 flex-grow-1 d-flex flex-column">
+        <h1 class="fw-bold mt-auto">Hey there, I'm Amir Mohammad 👋</h1>
+      </div>
+      <div class="d-flex flex-column w-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          viewBox="0 0 1440 72"
+          fill="none"
+        >
+          <path
+            d="M456.464 0.0433865C277.158 -1.70575 0 50.0141 0 50.0141V74H1440V50.0141C1440 50.0141 1320.4 31.1925 1243.09 27.0276C1099.33 19.2816 1019.08 53.1981 875.138 50.0141C710.527 46.3727 621.108 1.64949 456.464 0.0433865Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- the main container -->
+    <main class="container home-page">
+      <div class="row">
+        <section class="recent-post col-lg-8">
+          <h4>RECENTLY PUBLISHED</h4>
+          <div class="container__post">
+            <article class="post--box">
+              <a href="./pages/single-article.html">
+                <h5 class="m-0">Lorem ipsum dolor sit amet.</h5>
+                <p class="post--box__text m-0">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Adipisci, vitae eum. Provident exercitationem, quia,
+                  consequatur tenetur libero quos, necessitatibus quam iure
+                  officia error cum iste enim minus nostrum perspiciatis ut
+                  aliquid soluta! Voluptatem, alias officiis?
+                </p>
+                <span> Read More </span>
+              </a>
+            </article>
+            <article class="post--box">
+              <a href="./pages/single-article.html">
+                <h5 class="m-0">Lorem ipsum dolor sit amet.</h5>
+                <p class="post--box__text m-0">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Adipisci, vitae eum. Provident exercitationem, quia,
+                  consequatur tenetur libero quos, necessitatibus quam iure
+                  officia error cum iste enim minus nostrum perspiciatis ut
+                  aliquid soluta! Voluptatem, alias officiis?
+                </p>
+                <span> Read More </span>
+              </a>
+            </article>
+            <article class="post--box">
+              <a href="./pages/single-article.html">
+                <h5 class="m-0">Lorem ipsum dolor sit amet.</h5>
+                <p class="post--box__text m-0">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Adipisci, vitae eum. Provident exercitationem, quia,
+                  consequatur tenetur libero quos, necessitatibus quam iure
+                  officia error cum iste enim minus nostrum perspiciatis ut
+                  aliquid soluta! Voluptatem, alias officiis?
+                </p>
+                <span> Read More </span>
+              </a>
+            </article>
+          </div>
+        </section>
+        <aside class="popular-content position-sticky col-lg-3 mt-lg-0 mt-5">
+          <h4>POPULAR CONTENT</h4>
+          <ul class="content--list p-0">
+            <li class="popular--list__item p-0">
+              <span class="list--item__icon">
+                <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
+              </span>
+              <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
+            </li>
+            <li class="popular--list__item p-0">
+              <span class="list--item__icon">
+                <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
+              </span>
+              <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
+            </li>
+            <li class="popular--list__item p-0">
+              <span class="list--item__icon">
+                <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
+              </span>
+              <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
+            </li>
+            <li class="popular--list__item p-0">
+              <span class="list--item__icon">
+                <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
+              </span>
+              <p class="m-0 p-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer--text">
+        <div class="footer--text__thanks">
+          <h4>Amir Mohammad</h4>
+          <p>Thanks For Reading!</p>
+        </div>
+        <p class="footer--text__copyright">
+          © 2020-present Joshua Comeau. All Rights Reserved.
+        </p>
+      </div>
+
+      <div class="footer--link">
+        <h4>Links</h4>
+        <ul class="footer--link__list">
+          <li>
+            <a href="./pages/about.html">About</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/isamirmmd">Linkedin</a>
+          </li>
+          <li>
+            <a href="#">Twitter/X</a>
+          </li>
+          <li>
+            <a href="mailto:amirfanweb@gmail.com">amirfanweb@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
