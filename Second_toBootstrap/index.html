@@ -75,9 +75,9 @@
       <div class="row">
         <section class="recent-post col-lg-8">
           <h4>RECENTLY PUBLISHED</h4>
-          <div class="container__post">
-            <article class="post--box">
-              <a href="./pages/single-article.html">
+          <div class="container__post d-flex flex-column">
+            <article class="post--box d-flex flex-column">
+              <a href="./pages/single-article.html" class="d-flex flex-column">
                 <h5 class="m-0">Lorem ipsum dolor sit amet.</h5>
                 <p class="post--box__text m-0">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -89,8 +89,8 @@
                 <span> Read More </span>
               </a>
             </article>
-            <article class="post--box">
-              <a href="./pages/single-article.html">
+            <article class="post--box d-flex flex-column">
+              <a href="./pages/single-article.html" class="d-flex flex-column">
                 <h5 class="m-0">Lorem ipsum dolor sit amet.</h5>
                 <p class="post--box__text m-0">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -102,8 +102,8 @@
                 <span> Read More </span>
               </a>
             </article>
-            <article class="post--box">
-              <a href="./pages/single-article.html">
+            <article class="post--box d-flex flex-column">
+              <a href="./pages/single-article.html" class="d-flex flex-column">
                 <h5 class="m-0">Lorem ipsum dolor sit amet.</h5>
                 <p class="post--box__text m-0">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -120,25 +120,33 @@
         <aside class="popular-content position-sticky col-lg-3 mt-lg-0 mt-5">
           <h4>POPULAR CONTENT</h4>
           <ul class="content--list p-0">
-            <li class="popular--list__item p-0">
+            <li
+              class="popular--list__item d-flex align-items-start position-relative p-0"
+            >
               <span class="list--item__icon">
                 <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
               </span>
               <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
             </li>
-            <li class="popular--list__item p-0">
+            <li
+              class="popular--list__item d-flex align-items-start position-relative p-0"
+            >
               <span class="list--item__icon">
                 <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
               </span>
               <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
             </li>
-            <li class="popular--list__item p-0">
+            <li
+              class="popular--list__item d-flex align-items-start position-relative p-0"
+            >
               <span class="list--item__icon">
                 <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
               </span>
               <p class="m-0 p-0">Lorem ipsum dolor sit.</p>
             </li>
-            <li class="popular--list__item p-0">
+            <li
+              class="popular--list__item d-flex align-items-start position-relative p-0"
+            >
               <span class="list--item__icon">
                 <img src="./assets/images/Right-Arrow.svg" alt="arrow icon" />
               </span>
@@ -151,36 +159,45 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer--text">
-        <div class="footer--text__thanks">
-          <h4>Amir Mohammad</h4>
-          <p>Thanks For Reading!</p>
-        </div>
-        <p class="footer--text__copyright">
-          © 2020-present Joshua Comeau. All Rights Reserved.
-        </p>
-      </div>
+    <footer
+      class="footer px-3 px-xl-0 my-0 mx-auto d-flex justify-content-between"
+    >
+      <div class="container py-0">
+        <div class="row">
+          <div class="footer--text d-flex flex-column col-6 col-md-9">
+            <div class="footer--text__thanks">
+              <h4>Amir Mohammad</h4>
+              <p>Thanks For Reading!</p>
+            </div>
+          </div>
 
-      <div class="footer--link">
-        <h4>Links</h4>
-        <ul class="footer--link__list">
-          <li>
-            <a href="./pages/about.html">About</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/isamirmmd">Linkedin</a>
-          </li>
-          <li>
-            <a href="#">Twitter/X</a>
-          </li>
-          <li>
-            <a href="mailto:amirfanweb@gmail.com">amirfanweb@gmail.com</a>
-          </li>
-        </ul>
+          <div class="footer--link col-6 col-md-3">
+            <h4 class="fw-normal">Links</h4>
+            <ul class="footer--link__list fw-normal d-flex flex-column p-0">
+              <li>
+                <a href="./pages/about.html">About</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/isamirmmd">Linkedin</a>
+              </li>
+              <li>
+                <a href="#">Twitter/X</a>
+              </li>
+              <li>
+                <a href="mailto:amirfanweb@gmail.com">amirfanweb@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p class="footer--text__copyright fw-normal mt-auto">
+            © 2020-present Joshua Comeau. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </footer>
 
+    <script src="./scripts/bootstrap.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

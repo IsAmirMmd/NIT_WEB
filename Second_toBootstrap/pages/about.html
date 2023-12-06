@@ -4,47 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My Blog Website" />
+    <link rel="stylesheet" href="../style/bootstrap.css" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/font.css" />
     <title>My Blog - About</title>
   </head>
   <body class="about-page">
     <!-- header block -->
-    <header class="header">
-      <nav class="navbar">
-        <div class="nav--brand">
-          <a href="../index.html">IsAmirMmd</a>
+    <header
+      class="header sticky-top d-flex justify-content-center align-items-center"
+    >
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <a class="p-0 navbar-brand" href="../index.html">IsAmirMmd</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./articles.html">articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-link" href="./about.html">about</a>
+            </li>
+          </ul>
+          <span class="nav--theme">
+            <img
+              src="./assets/images/Sun.svg"
+              alt="theme changer"
+              width="32"
+              height="32"
+            />
+          </span>
         </div>
-        <ul class="nav--link">
-          <li>
-            <a href="../pages/articles.html">articles</a>
-          </li>
-          <li><a href="../pages/about.html" class="active-link">about</a></li>
-        </ul>
-        <span class="nav--theme">
-          <img src="../assets/images/Sun.svg" alt="theme changer" />
-        </span>
       </nav>
     </header>
 
     <!-- the main container -->
     <main class="container resume">
-      <section class="resume--gallery">
-        <span>
-          <img src="../assets/images/altImage.png" alt="image 1" />
-        </span>
-        <span>
-          <img src="../assets/images/altImage.png" alt="image 2" />
-        </span>
-        <span>
-          <img src="../assets/images/altImage.png" alt="image 3" />
-        </span>
-        <span>
-          <img src="../assets/images/altImage.png" alt="image 4" />
-        </span>
+      <section class="resume--gallery d-flex px-2 px-lg-0">
+        <div class="row flex-nowrap overflow-auto">
+          <span class="col-12 col-md-6 col-lg-3">
+            <img src="../assets/images/altImage.png" alt="image 1" />
+          </span>
+          <span class="col-12 col-md-6 col-lg-3">
+            <img src="../assets/images/altImage.png" alt="image 2" />
+          </span>
+          <span class="col-12 col-md-6 col-lg-3">
+            <img src="../assets/images/altImage.png" alt="image 3" />
+          </span>
+          <span class="col-12 col-md-6 col-lg-3">
+            <img src="../assets/images/altImage.png" alt="image 4" />
+          </span>
+        </div>
       </section>
 
-      <section class="resume--about">
+      <section class="resume--about px-1">
         <h4>About Me</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -67,16 +90,16 @@
         <h4>Connect</h4>
         <ul>
           <li>
-            <a href=""> Email </a>
+            <a class="text-decoration-underline" href=""> Email </a>
           </li>
           <li>
-            <a href=""> Linkedin </a>
+            <a class="text-decoration-underline" href=""> Linkedin </a>
           </li>
           <li>
-            <a href=""> Twitter/X </a>
+            <a class="text-decoration-underline" href=""> Twitter/X </a>
           </li>
           <li>
-            <a href=""> GitHub </a>
+            <a class="text-decoration-underline" href=""> GitHub </a>
           </li>
         </ul>
       </section>
@@ -151,33 +174,41 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer--text">
-        <div class="footer--text__thanks">
-          <h4>Amir Mohammad</h4>
-          <p>Thanks For Reading!</p>
-        </div>
-        <p class="footer--text__copyright">
-          © 2020-present Joshua Comeau. All Rights Reserved.
-        </p>
-      </div>
+    <footer
+      class="footer px-3 px-xl-0 my-0 mx-auto d-flex justify-content-between"
+    >
+      <div class="py-0 w-100">
+        <div class="row">
+          <div class="footer--text d-flex flex-column col-6 col-md-9">
+            <div class="footer--text__thanks">
+              <h4>Amir Mohammad</h4>
+              <p>Thanks For Reading!</p>
+            </div>
+          </div>
 
-      <div class="footer--link">
-        <h4>Links</h4>
-        <ul class="footer--link__list">
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/isamirmmd">Linkedin</a>
-          </li>
-          <li>
-            <a href="#">Twitter/X</a>
-          </li>
-          <li>
-            <a href="mailto:amirfanweb@gmail.com">amirfanweb@gmail.com</a>
-          </li>
-        </ul>
+          <div class="footer--link col-6 col-md-3">
+            <h4 class="fw-normal">Links</h4>
+            <ul class="footer--link__list fw-normal d-flex flex-column p-0">
+              <li>
+                <a href="./pages/about.html">About</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/isamirmmd">Linkedin</a>
+              </li>
+              <li>
+                <a href="#">Twitter/X</a>
+              </li>
+              <li>
+                <a href="mailto:amirfanweb@gmail.com">amirfanweb@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p class="footer--text__copyright fw-normal mt-auto">
+            © 2020-present Joshua Comeau. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </footer>
 
