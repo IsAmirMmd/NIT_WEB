@@ -293,9 +293,7 @@ a.active-link {
 }
 
 .resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* * some rule changed after using bootstrap */
 }
 
 .resume h4 {
@@ -310,8 +308,10 @@ a.active-link {
 }
 
 @media screen and (width <= 768px) {
-  .resume h4{
-    min-width: 0;
+  .resume h4 {
+    min-width: 80px;
+    white-space: wrap;
+    text-align: left;
   }
 }
 
@@ -321,17 +321,13 @@ a.active-link {
 
 .resume--gallery img {
   border-radius: 12px;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 .resume--about {
   margin-top: 64px;
-  display: flex;
   gap: 32px;
   max-width: var(--about-width);
-  width: 100%;
 }
 
 .resume--about p {
@@ -342,16 +338,11 @@ a.active-link {
 
 .resume--connect {
   max-width: var(--about-width);
-  width: 100%;
   margin-top: 48px;
-  display: flex;
   gap: 32px;
-  align-items: center;
 }
 
 .resume--connect ul {
-  width: 100%;
-  display: flex;
   gap: 24px;
 }
 
@@ -365,43 +356,26 @@ a.active-link {
 
 .resume--work {
   max-width: var(--about-width);
-  width: 100%;
   margin-top: 48px;
-  display: flex;
   gap: 32px;
 }
 
 .resume--work__list {
-  display: flex;
-  flex-direction: column;
   gap: 32px;
-  width: 100%;
 }
 
 .resume--work .resume--work__project {
-  width: 100%;
-  display: flex;
+  /* * some rule changed after using bootstrap */
 }
 .resume--work__project .project_image {
   width: 64px;
   height: 64px;
   border-radius: 100%;
-  overflow: hidden;
   margin-right: 20px;
 }
 
 .resume--work__project .project_info {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 4px 0;
-}
-
-.resume--work__project .project_image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
 }
 
 .resume--work__project p {
@@ -412,9 +386,21 @@ a.active-link {
 .project__position {
   font-size: 24px;
 }
-
 .project__company {
   font-size: 16px;
+}
+
+@media screen and (width <= 768px) {
+  .project__position {
+    font-size: 16px;
+  }
+  .project__company {
+    font-size: 12px;
+  }
+  .resume--work__project .project_image {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .resume--work__project .project__date {
@@ -425,7 +411,7 @@ a.active-link {
 }
 
 .resume--side {
- max-width: var(--about-width);
+  max-width: var(--about-width);
   margin-top: 48px;
   display: flex;
   gap: 32px;

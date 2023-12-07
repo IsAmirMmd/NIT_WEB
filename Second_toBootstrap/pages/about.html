@@ -49,27 +49,43 @@
     </header>
 
     <!-- the main container -->
-    <main class="container resume">
-      <section class="resume--gallery d-flex px-2 px-lg-0">
+    <main class="container resume d-flex flex-column align-items-center px-2">
+      <section class="resume--gallery d-flex px-1">
         <div class="row flex-nowrap overflow-auto">
-          <span class="col-12 col-md-6 col-lg-3">
-            <img src="../assets/images/altImage.png" alt="image 1" />
+          <span class="col-12 col-md-6 col-lg-3 d-block">
+            <img
+              class="w-100 h-100"
+              src="../assets/images/altImage.png"
+              alt="image 1"
+            />
           </span>
-          <span class="col-12 col-md-6 col-lg-3">
-            <img src="../assets/images/altImage.png" alt="image 2" />
+          <span class="col-12 col-md-6 col-lg-3 d-block">
+            <img
+              class="w-100 h-100"
+              src="../assets/images/altImage.png"
+              alt="image 2"
+            />
           </span>
-          <span class="col-12 col-md-6 col-lg-3">
-            <img src="../assets/images/altImage.png" alt="image 3" />
+          <span class="col-12 col-md-6 col-lg-3 d-block">
+            <img
+              class="w-100 h-100"
+              src="../assets/images/altImage.png"
+              alt="image 3"
+            />
           </span>
-          <span class="col-12 col-md-6 col-lg-3">
-            <img src="../assets/images/altImage.png" alt="image 4" />
+          <span class="col-12 col-md-6 col-lg-3 d-block">
+            <img
+              class="w-100 h-100"
+              src="../assets/images/altImage.png"
+              alt="image 4"
+            />
           </span>
         </div>
       </section>
 
-      <section class="resume--about px-1">
-        <h4>About Me</h4>
-        <p>
+      <section class="resume--about d-flex w-100">
+        <h4 class="">About Me</h4>
+        <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
           cupiditate harum sapiente quasi necessitatibus inventore aspernatur
           veritatis tempora voluptas eaque velit fugiat sint, dolor ullam autem
@@ -86,9 +102,9 @@
         </p>
       </section>
 
-      <section class="resume--connect">
+      <section class="resume--connect d-flex align-items-center w-100">
         <h4>Connect</h4>
-        <ul>
+        <ul class="px-0 d-flex flex-wrap w-100">
           <li>
             <a class="text-decoration-underline" href=""> Email </a>
           </li>
@@ -104,70 +120,108 @@
         </ul>
       </section>
 
-      <section class="resume--work">
+      <section class="resume--work d-flex w-100">
         <h4>Work</h4>
-        <ul class="resume--work__list">
-          <li class="resume--work__project">
-            <span class="project_image">
-              <img src="../assets/images/altImage.png" alt="" />
+        <ul class="resume--work__list d-flex flex-column w-100 px-0">
+          <li class="resume--work__project w-100 d-flex">
+            <span class="project_image overflow-hidden">
+              <img
+                class="w-100 h-100 rounded-circle"
+                src="../assets/images/altImage.png"
+                alt=""
+              />
             </span>
-            <div class="project_info">
-              <p class="project__position">position</p>
-              <p class="project__company">company</p>
+            <div
+              class="project_info d-flex h-100 flex-column justify-content-between"
+            >
+              <p class="project__position mb-0">position</p>
+              <p class="project__company mb-0">company</p>
             </div>
             <span class="project__date">2021 - Now</span>
           </li>
-          <li class="resume--work__project">
-            <span class="project_image">
-              <img src="../assets/images/altImage.png" alt="" />
+          <li class="resume--work__project w-100 d-flex">
+            <span class="project_image overflow-hidden">
+              <img
+                class="w-100 h-100 rounded-circle"
+                src="../assets/images/altImage.png"
+                alt=""
+              />
             </span>
-            <div class="project_info">
-              <p class="project__position">position</p>
-              <p class="project__company">company</p>
+            <div
+              class="project_info d-flex h-100 flex-column justify-content-between"
+            >
+              <p class="project__position mb-0">position</p>
+              <p class="project__company mb-0">company</p>
             </div>
             <span class="project__date">2016 - 2021</span>
           </li>
-          <li class="resume--work__project">
-            <span class="project_image">
-              <img src="../assets/images/altImage.png" alt="" />
+          <li class="resume--work__project w-100 d-flex">
+            <span class="project_image overflow-hidden">
+              <img
+                class="w-100 h-100 rounded-circle"
+                src="../assets/images/altImage.png"
+                alt=""
+              />
             </span>
-            <div class="project_info">
-              <p class="project__position">position</p>
-              <p class="project__company">company</p>
+            <div
+              class="project_info d-flex h-100 flex-column justify-content-between"
+            >
+              <p class="project__position mb-0">position</p>
+              <p class="project__company mb-0">company</p>
             </div>
             <span class="project__date">2013 - 2016</span>
           </li>
         </ul>
       </section>
 
-      <section class="resume--side resume--work">
+      <section class="resume--side resume--work d-flex w-100">
         <h4>Side Projects</h4>
-        <ul class="resume--work__list">
-          <li class="resume--work__project">
-            <span class="project_image">
-              <img src="../assets/images/altImage.png" alt="" />
+        <ul class="resume--work__list d-flex flex-column px-0">
+          <li class="resume--work__project w-100 d-flex">
+            <span class="project_image overflow-hidden">
+              <img
+                class="w-100 h-100 rounded-circle"
+                src="../assets/images/altImage.png"
+                alt=""
+              />
             </span>
-            <div class="project_info">
-              <p class="project__position">title</p>
-              <p class="project__company">description</p>
+            <div
+              class="project_info d-flex h-100 flex-column justify-content-between"
+            >
+              <p class="project__position mb-0">title</p>
+              <p class="project__company mb-0">description</p>
             </div>
           </li>
-          <li class="resume--work__project">
-            <span class="project_image">
-              <img src="../assets/images/altImage.png" alt="" />
+          <li
+            class="resume--work__project w-100 d-flex d-flex w-100 align-items-center"
+          >
+            <span class="project_image overflow-hidden">
+              <img
+                class="w-100 h-100 rounded-circle"
+                src="../assets/images/altImage.png"
+                alt=""
+              />
             </span>
-            <div class="project_info">
-              <p class="project__position">title</p>
-              <p class="project__company">description</p>
+            <div
+              class="project_info d-flex h-100 flex-column justify-content-between"
+            >
+              <p class="project__position mb-0">title</p>
+              <p class="project__company mb-0">description</p>
             </div>
           </li>
-          <li class="resume--work__project">
-            <span class="project_image">
-              <img src="../assets/images/altImage.png" alt="" />
+          <li class="resume--work__project w-100 d-flex">
+            <span class="project_image overflow-hidden">
+              <img
+                class="w-100 h-100 rounded-circle"
+                src="../assets/images/altImage.png"
+                alt=""
+              />
             </span>
-            <div class="project_info">
-              <p class="project__position">title</p>
-              <p class="project__company">description</p>
+            <div
+              class="project_info d-flex h-100 flex-column justify-content-between"
+            >
+              <p class="project__position mb-0">title</p>
+              <p class="project__company mb-0">description</p>
             </div>
           </li>
         </ul>
