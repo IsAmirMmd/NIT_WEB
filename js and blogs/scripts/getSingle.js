@@ -6,6 +6,7 @@ const webTitle = document.querySelector(".container.hero-section h1")
 class UI {
     constructor(post) {
         webTitle.innerText = post.title
+        document.title = post.title
 
         const htmlFormat = sampleContent;
         htmlElement.innerHTML = htmlFormat;
@@ -41,6 +42,10 @@ class UI {
     }
     showInDOM() {
         const container = document.querySelector(".container__post")
+
+        // make container empty of default article
+        container.innerHTML = ""
+
         container.appendChild(htmlElement)
         this.createTable()
     }
@@ -82,11 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = urlParams.get('');
 
     fetch(`http://127.0.0.1:3000/api/articles/${id}`).then(res => res.json())
+        .catch(error => {
+            // show this instead of showing empty page
+            let tempData = {
+                title: "Lorem ipsum dolor sit amet by JS",
+            }
+            new UI(tempData)
+        })
         .then(data => {
             new UI(data)
-            document.title = data.title
         })
-        .catch(err => console.error(err))
 
 })
 
