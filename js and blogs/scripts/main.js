@@ -1,6 +1,5 @@
 const themeChanger = document.querySelector(".nav--theme");
 
-let isLight;
 const sunImage = `
 <svg
 width="32"
@@ -28,8 +27,9 @@ width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/
 const allIcon = sunImage + moonImage
 themeChanger.innerHTML = allIcon;
 
+let isLight;
 document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme")
+    const savedTheme = localStorage.getItem("theme") || "light";
 
     isLight = savedTheme === "light" ? true : false;
     if (isLight) {
@@ -64,44 +64,3 @@ themeChanger.addEventListener("click", () => {
 })
 
 
-// ! getting h2 seprated ...
-var htmlText = `
-<h2>Lorem ipsum dolor sit amet</h2>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco labori
-</p>
-<h2>Lorem ipsum dolor sit amet</h2>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco labori
-</p>
-`;
-
-// var tempElement = document.createElement('div');
-// tempElement.innerHTML = htmlText;
-
-// var h2Elements = tempElement.querySelectorAll('h2');
-
-// var ulElement = document.createElement('ul');
-
-// // Iterate through h2 elements and create li elements with anchor links
-// h2Elements.forEach(function (h2, index) {
-//     var liElement = document.createElement('li');
-//     var aElement = document.createElement('a');
-
-//     // Set the anchor link text and href (you can modify this as needed)
-//     aElement.textContent = h2.textContent;
-//     aElement.href = '#section-' + (index + 1);
-
-//     // Append the anchor link to the list item
-//     liElement.appendChild(aElement);
-
-//     // Append the list item to the unordered list
-//     ulElement.appendChild(liElement);
-// });
-
-// // Append the unordered list to the body or any desired container
-// document.body.appendChild(ulElement);
